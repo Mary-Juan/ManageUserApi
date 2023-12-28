@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "FaGi+DY39c/Dn7ZQbeHVOk0g3a38n+D7rdLcbwTqoMo0N4eUwf3zNfIGbjgSdAfgccxlvuKcKzV+nda7YlMLLg==",
+  "dgSpecHash": "wiG8BPe5UwMgVtAlUV6BcTCxlxFUoDWxcq552dCeA1bIWx6Gvu1vCB1Q0bSdhUGDXktFsrMT9nb8H8pocG4mEQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mobocomputer\\source\\repos\\ManageUserApi\\ManageUserApi\\ManageUserApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mobocomputer\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\mobocomputer\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\mobocomputer\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\mobocomputer\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\mobocomputer\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\mobocomputer\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

@@ -1,6 +1,6 @@
 ﻿namespace ManageUserApi.Entities
 {
-    public class Admin
+    public class Admin : Person
     {
     }
 }
