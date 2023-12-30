@@ -1,5 +1,6 @@
 using ManageUserApi.Context;
 using ManageUserApi.Context.Interfaces;
+using ManageUserApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,9 @@ builder.Services.AddSwaggerGen();
 #region IOC
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<AdminService>();
+builder.Services.AddScoped<UserService>();
+
 
 #endregion
 
