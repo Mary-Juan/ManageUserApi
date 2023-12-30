@@ -8,12 +8,10 @@ namespace ManageUserApi.Services
 {
     public class UserService
     {
-        private readonly string _filePath;
         IUserRepository _userRepository;
-        public UserService(IConfiguration configuration)
+        public UserService(IUserRepository userRepository)
         {
-            _filePath = configuration.GetValue<string>("FilePath");
-            _userRepository = new UserRepository(_filePath);
+            _userRepository = userRepository;
         }
 
         public Role? Login(LoginDto login)

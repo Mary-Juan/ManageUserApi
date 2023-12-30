@@ -9,9 +9,9 @@ namespace ManageUserApi.Context
 
         private readonly List<User> _users;
 
-        public UserRepository(string filePath)
+        public UserRepository(IConfiguration configuration)
         {
-            _filePath = filePath;
+            _filePath = configuration.GetValue<string>("FilePath");
             _users = Serialization.DeserializeFromJsonFile(_filePath);
         }
 

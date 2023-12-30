@@ -5,6 +5,7 @@ namespace ManageUserApi.Context
 {
     public static class Serialization
     {
+
         public static bool SerializeToJsonFile(string filePath, List<User> users)
         {
             try

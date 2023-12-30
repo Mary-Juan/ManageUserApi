@@ -8,12 +8,10 @@ namespace ManageUserApi.Services
 {
     public class AdminService
     {
-        private readonly string _filePath;
         IUserRepository _adminRepository;
-        public AdminService(IConfiguration configuration)
+        public AdminService(IUserRepository userRepository)
         {
-            _filePath = configuration.GetValue<string>("FilePath");
-            _adminRepository = new UserRepository(_filePath);
+            _adminRepository = userRepository;
         }
 
         public List<User> GetUsersList()
