@@ -1,0 +1,1 @@
+{"$type":"ManageUserApi.Entities.User, ManageUserApi","Id":"7c7fb49b-4df2-49b0-94c4-487f95b824b6","UserName":"mary","Email":"marya.6t@gmail.com","Password":"58975897","IsDeleted":false,"HaveAccess":true,"Role":{"$type":"ManageUserApi.Entities.Role, ManageUserApi","RoleId":1,"RoleTitle":"User"}}

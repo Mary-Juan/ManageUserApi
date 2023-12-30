@@ -21,6 +21,7 @@ namespace ManageUserApi.Controllers
            return _adminService.GetUsersList();
         }
 
+        [HttpGet("EnableUser")]
         public IActionResult EnableUser(string id)
         {
             if(!_adminService.EnableUser(id))
@@ -31,6 +32,7 @@ namespace ManageUserApi.Controllers
             return Ok();
         }
 
+        [HttpGet("DisableUser")]
         public IActionResult DisableUser(string id)
         {
             if (!_adminService.DisableUser(id))
@@ -41,6 +43,7 @@ namespace ManageUserApi.Controllers
             return Ok();
         }
 
+        [HttpGet("DeleteUser")]
         public IActionResult DeleteUser(string id)
         {
             try

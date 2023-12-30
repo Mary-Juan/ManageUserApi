@@ -27,6 +27,7 @@ namespace ManageUserApi.Services
                 return false;
 
             user.HaveAccess = true;
+            _adminRepository.SaveChanges();
             return true;
         }
 
@@ -38,6 +39,7 @@ namespace ManageUserApi.Services
                 return false;
 
             user.HaveAccess = false;
+            _adminRepository.SaveChanges();
             return true;
         }
 
@@ -46,6 +48,7 @@ namespace ManageUserApi.Services
             try
             {
                 _adminRepository.Delete(id);
+                _adminRepository.SaveChanges();
                 return true;
             }
             catch(Exception ex)
