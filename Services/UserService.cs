@@ -9,17 +9,17 @@ namespace ManageUserApi.Services
     public class UserService
     {
         private readonly string _filePath;
-        IPersonRepository _personRepository;
+        IUserRepository _userRepository;
         public UserService(IConfiguration configuration)
         {
             _filePath = configuration.GetValue<string>("FilePath");
-            _personRepository = new PersonRepository(_filePath);
+            _userRepository = new UserRepository(_filePath);
         }
 
         public Role? Login(LoginDto login)
         {
-            List<Person> people = _personRepository.GetAll();
-            Person person = people.FirstOrDefault(p => p.UserName == login.UserName && p.Password == login.Password);
+            List<User> users = _userRepository.GetAll();
+            User person = users.FirstOrDefault(p => p.UserName == login.UserName && p.Password == login.Password);
             if (person == null)
             {
                 return null;
@@ -40,8 +40,8 @@ namespace ManageUserApi.Services
 
             try
             {
-                _personRepository.Create(user);
-                _personRepository.SaveChanges();
+                _userRepository.Create(user);
+                _userRepository.SaveChanges();
                 return true;
             }
             catch(Exception ex)
