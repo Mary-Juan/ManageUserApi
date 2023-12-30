@@ -20,7 +20,6 @@ namespace ManageUserApi.Context
             try
             {
                 _people.Add(person);
-                SaveChanges();
                 return person;
             }
             catch (Exception ex)
@@ -35,7 +34,6 @@ namespace ManageUserApi.Context
             {
                 Person person = GetByID(id);
                 person.IsDeleted = true;
-                SaveChanges();
                 return true;
             }
             catch (Exception ex)
@@ -68,7 +66,6 @@ namespace ManageUserApi.Context
                 intendedPerson.Password = person.Password;
                 intendedPerson.Email = person.Email;
                 intendedPerson.Role = person.Role;
-                SaveChanges();
                 return intendedPerson;
             }
             catch(Exception ex)
