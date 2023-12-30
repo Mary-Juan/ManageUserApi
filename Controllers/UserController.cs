@@ -16,7 +16,7 @@ namespace ManageUserApi.Controllers
             _userService = userService;
         }
 
-        [HttpPost]
+        [HttpPost("Login")]
         public IActionResult Login(LoginDto login)
         {
             Role role = _userService.Login(login);
@@ -29,6 +29,7 @@ namespace ManageUserApi.Controllers
             return Ok(role.RoleId);
         }
 
+        [HttpPost("Register")]
         public IActionResult Register(RegisterDto register)
         {
             try
